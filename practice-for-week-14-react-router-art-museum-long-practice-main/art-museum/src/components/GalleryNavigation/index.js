@@ -2,12 +2,14 @@ import {NavLink,nav,userParams} from 'react-router-dom';
 import './GalleryNavigation.css';
 
 export const GalleryNavigation = ({galleries}) => { 
+
   const GalleryList = () => {
-  return galleries.map(gallery=>{
+    return galleries.map(gallery=>{
+    if(!gallery.theme ) gallery.theme = gallery.name;
     return (
       <>
       <li>
-        <NavLink activeClassName='active' to={`/gallery/${gallery.id}`}>{gallery.name}</NavLink>
+        <NavLink activeClassName='active' to={`/galleries/${gallery.gallerynumber}`}>{gallery.theme}</NavLink>
       </li>
       </>
     );

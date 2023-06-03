@@ -8,13 +8,16 @@
   font-size: 50px;
   text-decoration: none;
   color: black;
-  text-shadow: 3px 3px blue, 6px 3px red,9px 3px green;
+  
   width: 60%;
 
 
 }
 
 .cool-list *:hover {
-  background-color: yellow;
+
+text-shadow: 3px 3px blue, 6px 3px red,9px 3px green;
+
+
 
 }
